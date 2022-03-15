@@ -1,0 +1,76 @@
+$generalFontSize: 16px;
+$titleFontSize: $generalFontSize*2;
+$subtitleFontSize: $generalFontSize*1.6;
+$mainColor: lightskyblue;
+$buttonColor: green;
+$generalPadding: 10px 10px 5px 12px;
+$generalMargin: 5px 10px;
+$generalBorder: 3px solid blue;
+
+
+@mixin mixin1($alignItems,$justifyContent,$height){
+    border: $generalBorder;
+    margin: $generalMargin;
+    display: flex;
+    align-items: $alignItems;
+    justify-content: $justifyContent;
+    height: $height;
+}
+
+body {
+    background-color: $mainColor;
+    font-size: $generalFontSize;
+    h1 {
+        color: blue;
+    }
+}
+
+.wrapper {
+    font-size: $generalFontSize*1.3;
+    user-select: none;
+    h1 {
+        color: white;
+    }
+}
+
+ul {
+    li {
+        a {color: yellow;}
+        p { color: $mainColor; margin: $generalMargin; padding: $generalPadding;}
+        div { color: $buttonColor;}
+    }
+}
+
+
+.box {
+    h1 {color: white}
+    h2 {color: darkblue; border: $generalBorder}
+    a { 
+        font-size: $generalFontSize;
+        &:hover {font-size: $titleFontSize;}
+    }
+    
+}
+
+.box2 {
+    color: $buttonColor;
+    &__title {
+        &--f30 {font-size: $titleFontSize}
+    }
+    &__subtitle {
+        &--f25 {font-size: $subtitleFontSize}
+    }
+    &__description {
+        &--f16cr {font-size: $generalFontSize; color: red}
+    }
+}
+
+.flex{
+    @include mixin1(center,flex-end,50px);
+}
+.flex2{
+    @include mixin1(flex-start,flex-end,100px);
+}
+.flex3{
+    @include mixin1(center,center,150px);
+}

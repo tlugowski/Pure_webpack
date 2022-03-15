@@ -1,0 +1,77 @@
+/*!***********************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./src/css/index.scss ***!
+  \***********************************************************************************************************************************************************************************/
+body {
+  background-color: lightskyblue;
+  font-size: 16px; }
+  body h1 {
+    color: blue; }
+
+.wrapper {
+  font-size: 20.8px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .wrapper h1 {
+    color: white; }
+
+ul li a {
+  color: yellow; }
+
+ul li p {
+  color: lightskyblue;
+  margin: 5px 10px;
+  padding: 10px 10px 5px 12px; }
+
+ul li div {
+  color: green; }
+
+.box h1 {
+  color: white; }
+
+.box h2 {
+  color: darkblue;
+  border: 3px solid blue; }
+
+.box a {
+  font-size: 16px; }
+  .box a:hover {
+    font-size: 32px; }
+
+.box2 {
+  color: green; }
+  .box2__title--f30 {
+    font-size: 32px; }
+  .box2__subtitle--f25 {
+    font-size: 25.6px; }
+  .box2__description--f16cr {
+    font-size: 16px;
+    color: red; }
+
+.flex {
+  border: 3px solid blue;
+  margin: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 50px; }
+
+.flex2 {
+  border: 3px solid blue;
+  margin: 5px 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  height: 100px; }
+
+.flex3 {
+  border: 3px solid blue;
+  margin: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px; }
+
+
+/*# sourceMappingURL=main.css.map*/
